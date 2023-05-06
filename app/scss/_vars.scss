@@ -1,0 +1,30 @@
+$title: #363853;
+$colortext: #31352B;
+$orange: #FF6838;
+$cw: #fff;
+
+%rubicreg-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubicmed-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%rubiclight-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
+%rubicitalic-400 {
+  font-family: 'Rubik-Italic', sans-serif;
+  font-weight: 400;
+}
+
+@mixin bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

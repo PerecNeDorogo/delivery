@@ -3,6 +3,124 @@
 @import 'reset';
 @import 'global';
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.menu__inner {
+  display: flex;
+}
+
+.menu__list {
+  margin-right: 62px;
+  display: flex;
+
+  .menu__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .menu__item-link {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  position: relative;
+
+  .user-nav__link--search {
+    background-image: url(../images/icons/search.svg);
+    width: 21px;
+    height: 21px;
+    @include bg-image;
+    margin-right: 36px;
+  }
+
+  .user-nav__link--cart {
+    background-image: url(../images/icons/cart_icon.svg);
+    width: 21px;
+    height: 20px;
+    @include bg-image;
+  }
+
+  .user-nav__num {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: $orange;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14px;
+    top: -4px;
+    right: -8px;
+    color: $cw;
+    font-size: 10px;
+    line-height: 15px;
+
+  }
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 151px);
+}
+
+.header__top-image {
+  max-height: 660px;
+  max-width: 560px;
+  width: 100%;
+}
+
+.header__top-content {
+  max-width: 450px;
+  .header__top-text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+.header__top-title,
+.header__top-text {
+  margin-bottom: 20px;
+}
+
+
+.header__top-title {
+  @extend %rubicmed-500;
+  font-weight: 500;
+  font-size: 66px;
+  color: $orange;
+  text-transform: uppercase;
+}
+
+.header__top-title-top {
+  color: $title;
+  display: block;
+}
+
+.header__top-links {
+  display: flex;
+  align-items: center;
+}
+
+.header__top-links-order {
+  margin-right: 34px;
+  padding: 12px 32px;
+  font-size: 18px;
+  background-color: $orange;
+  border-radius: 6px;
+  color: $cw;
+  letter-spacing: 0.03em;
+}
+
+.header__top-links-more-link {
+  font-size: 20px;
+  border-bottom: 1px solid $title;
+  line-height: 1.5;
+}
+
 
 @import 'media';
-
