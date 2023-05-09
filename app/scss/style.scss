@@ -144,6 +144,7 @@
 }
 
 .main {
+  min-height: 100%;
   flex: 1 0 auto;
   padding: 120px 0;
 }
@@ -180,15 +181,6 @@
   left: 32px;
 }
 
-.burger {
-  background-color: $orange;
-  padding: 22px 32px 22px 86px;
-}
-
-.burger::before {
-  background-image: url(../images/popular/popular_icons/burger_1.svg);
-}
-
 .pizza,
 .sandwich,
 .asian,
@@ -196,6 +188,15 @@
   background: #ffffff;
   box-shadow: 0 0 0 1px #ececec;
   padding: 22px 32px 22px 86px;
+}
+
+.burger {
+  background-color: $orange;
+  padding: 22px 32px 22px 86px;
+}
+
+.burger::before {
+  background-image: url(../images/popular/popular_icons/burger_1.svg);
 }
 
 .pizza::before {
@@ -215,10 +216,20 @@
 }
 
 // ==============================
+.popular__cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular__cards-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .popular__cards-item {
   background-color: #fff;
   max-width: 210px;
-  max-height: 299px;
   border-radius: 5px;
 }
 
@@ -233,8 +244,10 @@
 }
 
 .popular__cards-title {
-  padding: 0 10px 15px 10px;
+  min-height: 100%;
+  padding: 0 10px;
   line-height: 18px;
+  flex-grow: 1;
 }
 
 .popular__cards-price {
