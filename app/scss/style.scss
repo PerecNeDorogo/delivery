@@ -164,6 +164,7 @@
   position: relative;
   border-radius: 5px;
   max-height: 70px;
+  cursor: pointer;
 }
 
 .burger::before,
@@ -219,6 +220,8 @@
 .popular__cards-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .popular__cards-inner {
@@ -231,6 +234,8 @@
   background-color: #fff;
   max-width: 210px;
   border-radius: 5px;
+  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .popular__cards-img {
@@ -264,6 +269,7 @@
   color: #fff;
   border-radius: 6px;
   box-shadow: 0 0 0 1px #ececec;
+  cursor: pointer;
 }
 // ==============================
 // ==============================
