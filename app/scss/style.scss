@@ -148,6 +148,115 @@
   padding: 120px 0;
 }
 
+.popular__title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.popular__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.popular__btn {
+  position: relative;
+  border-radius: 5px;
+  max-height: 70px;
+}
+
+.burger::before,
+.pizza::before,
+.sandwich::before,
+.asian::before,
+.sets::before {
+  content: "";
+  position: absolute;
+  @include bg-image;
+  height: 44px;
+  width: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
+}
+
+.burger {
+  background-color: $orange;
+  padding: 22px 32px 22px 86px;
+}
+
+.burger::before {
+  background-image: url(../images/popular/popular_icons/burger_1.svg);
+}
+
+.pizza,
+.sandwich,
+.asian,
+.sets {
+  background: #ffffff;
+  box-shadow: 0 0 0 1px #ececec;
+  padding: 22px 32px 22px 86px;
+}
+
+.pizza::before {
+  background-image: url("../images/popular/popular_icons/pizza_1.svg");
+}
+
+.sandwich::before {
+  background-image: url("../images/popular/popular_icons/sandwich_1.svg");
+}
+
+.asian::before {
+  background-image: url("../images/popular/popular_icons/asia.svg");
+}
+
+.sets::before {
+  background-image: url("../images/popular/popular_icons/dish_1.svg");
+}
+
+// ==============================
+.popular__cards-item {
+  background-color: #fff;
+  max-width: 210px;
+  max-height: 299px;
+  border-radius: 5px;
+}
+
+.popular__cards-img {
+  padding: 20px 35px 10px;
+}
+
+.popular__cards-title,
+.popular__cards-price {
+  text-align: center;
+  font-size: 15px;
+}
+
+.popular__cards-title {
+  padding: 0 10px 15px 10px;
+  line-height: 18px;
+}
+
+.popular__cards-price {
+  @extend %rubicmed-500;
+  margin-bottom: 10px;
+}
+
+.popular__cards-btn {
+  padding: 7px 16px;
+  background-color: $orange;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #ececec;
+}
+// ==============================
+// ==============================
+// ==============================
+// ==============================
+// ==============================
 .footer {
   display: flex;
   flex-direction: column;
@@ -168,6 +277,11 @@
 
 .logo__footer {
   margin-bottom: 30px;
+}
+
+.footer__form-input {
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
 }
 
 .footer__form-input,
@@ -193,6 +307,9 @@
   font-size: 14px;
   border: none;
   color: #fff;
+  span {
+    padding: 13px 38px 13px 69px;
+  }
 }
 
 .footer__form-btn::before {
