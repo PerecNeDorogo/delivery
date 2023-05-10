@@ -37,28 +37,28 @@
       <header class="header">
         <div class="container">
           <nav class="menu">
-            <div class="logo">
-              <a class="logo__link" href="логотип">
-                <img class="logo__img" src="images/logo.svg" alt="#" />
-              </a>
-            </div>
+            <a class="logo focus-bd" href="логотип">
+              <img class="logo__img focus-bd" src="images/logo.svg" alt="#" />
+            </a>
 
             <div class="menu__inner">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Главная</a>
+                  <a class="menu__item-link focus-bd" href="#">Главная</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Блюда</a>
+                  <a class="menu__item-link focus-bd" href="#">Блюда</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Контакты</a>
+                  <a class="menu__item-link focus-bd" href="#">Контакты</a>
                 </li>
               </ul>
 
               <div class="user-nav">
-                <a class="user-nav__link user-nav__link--search" href="#"></a>
-                <a class="user-nav__link user-nav__link--cart" href="#">
+                <div class="user-nav-container">
+                  <a class="user-nav__link--search" href="#"></a>
+                </div>
+                <a class="user-nav__link--cart" href="#">
                   <span class="user-nav__num">4</span>
                 </a>
               </div>
@@ -103,25 +103,29 @@
             <h2 class="popular__title title">Популярные категории</h2>
             <ul class="popular__container">
               <li class="popular__item">
-                <button class="popular__btn burger" type="button">
+                <button class="popular__btn burger focus-bd" type="button">
                   Бургеры
                 </button>
               </li>
               <li class="popular__item">
-                <button class="popular__btn pizza" type="button">Пицца</button>
+                <button class="popular__btn pizza focus-bd" type="button">
+                  Пицца
+                </button>
               </li>
               <li class="popular__item">
-                <button class="popular__btn sandwich" type="button">
+                <button class="popular__btn sandwich focus-bd" type="button">
                   Сендвичи
                 </button>
               </li>
               <li class="popular__item">
-                <button class="popular__btn asian" type="button">
+                <button class="popular__btn asian focus-bd" type="button">
                   Азиатская кухня
                 </button>
               </li>
               <li class="popular__item">
-                <button class="popular__btn sets" type="button">Cеты</button>
+                <button class="popular__btn sets focus-bd" type="button">
+                  Cеты
+                </button>
               </li>
             </ul>
 
@@ -298,15 +302,13 @@
         <div class="container">
           <div class="footer__inner">
             <div class="footer__items">
-              <div class="logo logo__footer">
-                <a class="logo__link" href="логотип">
-                  <img class="logo__img" src="images/logo.svg" alt="#" />
-                </a>
-              </div>
+              <a class="logo logo__footer focus-bd" href="логотип">
+                <img class="logo__img" src="images/logo.svg" alt="#" />
+              </a>
 
               <form class="footer__form" action="#">
                 <input
-                  class="footer__form-input"
+                  class="footer__form-input focus-bd"
                   type="email"
                   placeholder="Ваш email"
                   required />
