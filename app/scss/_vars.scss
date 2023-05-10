@@ -28,3 +28,9 @@ $cw: #fff;
   background-size: cover;
   background-position: center;
 }
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
