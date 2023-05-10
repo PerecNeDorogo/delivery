@@ -17,13 +17,21 @@
 }
 
 .logo {
-  transition: box-shadow 0.3s;
   padding-top: 7px;
+  transition: box-shadow 0.3s, opacity 0.3s;
 }
-
+.focus-bg:focus,
 .focus-bd:focus {
   box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
   border-radius: 5px;
+}
+
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+
+.hover-collor:hover {
+  color: $orange;
 }
 
 .fixed {
@@ -55,7 +63,7 @@
   .menu__item-link {
     font-size: 18px;
     line-height: 21px;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, color 0.3s;
   }
 }
 
@@ -155,7 +163,8 @@
   align-items: center;
 }
 
-.header__link-order {
+.header__link-text {
+  display: block;
   margin-right: 34px;
   padding: 12px 32px;
   font-size: 18px;
@@ -163,12 +172,25 @@
   border-radius: 6px;
   color: $cw;
   letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s;
+}
+
+.focus-bg:focus {
+  color: $orange;
+  background-color: rgba(255, 122, 80, 0.1);
 }
 
 .header__link-more-text {
+  display: block;
   font-size: 20px;
   border-bottom: 1px solid $title;
   line-height: 1.5;
+}
+
+.header__link-more-text.focus-bd:focus {
+  border-bottom: none;
+  transition: border-radius 0.3s, box-shadow 0.3s;
 }
 
 .main {
