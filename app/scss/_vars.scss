@@ -1,25 +1,25 @@
 $title: #363853;
 $colortext: #31352b;
 $orange: #ff6838;
-$cw: #fff;
+$color-white: #fff;
 
 %rubicreg-400 {
-  font-family: "Rubik-Regular";
+  font-family: "Rubik";
   font-weight: 400;
 }
 
 %rubicmed-500 {
-  font-family: "Rubik-Medium";
+  font-family: "Rubik";
   font-weight: 500;
 }
 
 %rubiclight-300 {
-  font-family: "Rubik-Light";
+  font-family: "Rubik";
   font-weight: 300;
 }
 
 %rubicitalic-400 {
-  font-family: "Rubik-Italic";
+  font-family: "Rubik";
   font-weight: 400;
 }
 
@@ -28,9 +28,11 @@ $cw: #fff;
   background-size: cover;
   background-position: center;
 }
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
